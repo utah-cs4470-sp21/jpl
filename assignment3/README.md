@@ -114,7 +114,7 @@ be treated as a special case. The red channel of the pixel at (0,0),
 for example, should have its pixel values computed by average of the
 red values of the four pixels in the input image at (0,0), (0,1),
 (1,0), and (1,1). It can't be a full 3x3 square because five of those
-pixels would be offscreen.
+pixels would be off-screen.
 
 Your test program should blur `sample.png` and write the blurred image
 to `sample-blurry.png`. Time the resulting code using the built-in
@@ -153,7 +153,7 @@ must be treated inclusively, while the bottom and right coordinates
 must be treated inclusively. For example, `crop(img, 10, 20, 100,
 500)` should output an image of size `480x90`.
 
-Your test program should extract the 200x100 rectange at the center of
+Your test program should extract the 200x100 rectangle at the center of
 `sample.png` and write the resulting cropped image to
 `sample-center.png`.
 
