@@ -138,8 +138,7 @@ value of the pixel to be the following weighted average:
     + pixel @ (i2_int, j2_int + 1) * (1 - i2_frac) * j2_frac
     + pixel @ (i2_int + 1, j2_int + 1) * i2_frac * j2_frac
 
-If this description is confusing you can find [more details][bilin]
-online.
+You can find [more details][bilin] online.
 
 [bilin]: https://chao-ji.github.io/jekyll/update/2018/07/19/BilinearResize.html
 
