@@ -22,10 +22,11 @@ is pure black, and `{ 1., 1., 1., 1. }` is pure white. For this
 assignment, we won't be dealing with transparency, so you can always
 use `1.0` for the alpha channel.
 
-If can play around with the [Google color picker][color-picker] to
+You can play around with the [Google color picker][color-picker] to
 look up RGB colors. The RGB values are on the left, though keep in
 mind that these are using a scale of 0 to 255 whereas JPL uses a scale
-from 0.0 to 1.0.
+from 0.0 to 1.0, so you'll have to do a bit of math to convert between
+the two representations.
 
 [color-picker]: https://www.google.com/search?q=color+picker
 
@@ -161,7 +162,8 @@ Your test program should extract the 200x100 rectange at the center of
 
 You can use our JPL implementation on the CADE lab machines. The
 compiler executable is in `/home/regehr/jplc/jplc`. Please test it on
-the `gradient.jpl` program that we have provided. Your interaction
+the `gradient.jpl` program that we have provided in the same directory
+as the markdown file that you are reading right now. Your interaction
 with the compiler should look like this:
 
 ```
