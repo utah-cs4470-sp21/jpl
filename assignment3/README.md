@@ -216,9 +216,12 @@ machine in a windows.
 # HANDIN
 
 This assignment has no checkin component, but we are happy to discuss
-problems and solutions with you on Discord.
+problems and solutions with you on Discord. Please do not post full
+solutions to individual problems in the Discord.
 
 Each of your programs should be named after the function it mainly
 contains. So, for example, `blur.jpl` would contain your blur
-function and the correspond test code.
+function and the corresponding test code.
 
+Hand in 10 JPL files in a directory called `assignment3` in your
+Github repo.
