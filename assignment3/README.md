@@ -191,7 +191,9 @@ supposed to generate executables that crash (recall that JPL is a
 it is not particularly well tested. If you suspect that you have run
 into a compiler bug, please bring this up on the Discord and we'll try
 to get it fixed. This compiler also does not produce great error
-messages and we apologize in advance for that.
+messages and we apologize in advance for that. (If you hate the error
+messages that it produces, then hopefully this will motivate you to do
+a better job in your own compiler!)
 
 At this point you should view `gradient.png` and make sure it contains
 a color gradient. You can do this either by downloading the PNG file
