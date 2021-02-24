@@ -185,6 +185,14 @@ variables, please see the settings at the bottom of
 `/home/regehr/.bash_profile` on the CADE systems. Contact the
 instructors on Discord if you are having trouble.
 
+The compiler we have provided is not supposed to crash, nor is it
+supposed to generate executables that crash (recall that JPL is a
+*safe* programming language). However, this compiler is very new and
+it is not particularly well tested. If you suspect that you have run
+into a compiler bug, please bring this up on the Discord and we'll try
+to get it fixed. This compiler also does not produce great error
+messages and we apologize in advance for that.
+
 At this point you should view `gradient.png` and make sure it contains
 a color gradient. You can do this either by downloading the PNG file
 to your own machine, or you might also be able to use a remote display
