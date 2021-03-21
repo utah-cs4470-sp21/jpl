@@ -1,3 +1,4 @@
+global main
 global _main
 extern _sub_ints
 extern _sub_floats
@@ -22,6 +23,7 @@ const4: db `^ If you see '12' you need to print a newline after show commands\n`
 const5: dq 0
 
 section .text
+main:
 _main:
 	push rbp
 	mov rbp, rsp
@@ -48,4 +50,3 @@ _main:
 	add rsp, 32
 	pop rbp
 	ret
-Compilation succeeded: assembly complete

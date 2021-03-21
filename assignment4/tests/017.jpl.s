@@ -1,3 +1,4 @@
+global main
 global _main
 extern _sub_ints
 extern _sub_floats
@@ -18,6 +19,7 @@ const0: db `hi\n`, 0
 const1: dq 0
 
 section .text
+main:
 _main:
 	push rbp
 	mov rbp, rsp
@@ -30,4 +32,3 @@ _main:
 	add rsp, 16
 	pop rbp
 	ret
-Compilation succeeded: assembly complete

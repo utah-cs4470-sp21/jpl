@@ -1,3 +1,4 @@
+global main
 global _main
 extern _sub_ints
 extern _sub_floats
@@ -20,6 +21,7 @@ const2: db `Please do not modify foo.png, it should be 10x10\n`, 0
 const3: dq 0
 
 section .text
+main:
 _main:
 	push rbp
 	mov rbp, rsp
@@ -54,4 +56,3 @@ _main:
 	add rsp, 64
 	pop rbp
 	ret
-Compilation succeeded: assembly complete

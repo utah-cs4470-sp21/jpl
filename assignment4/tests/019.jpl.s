@@ -1,3 +1,4 @@
+global main
 global _main
 extern _sub_ints
 extern _sub_floats
@@ -20,6 +21,7 @@ const2: db `^ If you see 'bye' twice you need to add a null-terminator to your s
 const3: dq 0
 
 section .text
+main:
 _main:
 	push rbp
 	mov rbp, rsp
@@ -36,4 +38,3 @@ _main:
 	add rsp, 16
 	pop rbp
 	ret
-Compilation succeeded: assembly complete
