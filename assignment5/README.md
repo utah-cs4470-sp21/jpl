@@ -160,6 +160,39 @@ So consider the two possible parse trees of `1 + 2 * 3`:
 
 You can do the same trick with larger grammars, like the full JPL grammar.
 
+Some other things to watch for. For subtraction, you'll have questions
+about associativity:
+
+    1 - 2 - 3 => ((1 - 2) - 3) or (1 - (2 - 3)) ?
+
+This simple grammar allows both:
+
+    expr : <expr> - <expr>
+         | <int>
+
+The solution is to realize you want to parse a *sequence* of
+subtractions, not one at a time:
+
+    expr : <int> - <int> ...
+
+You can then convert the whole sequence to the right AST.
+
+Another issue is parentheses. When you have parenthesized expressions you want that to 
+"override" precedence. So you must build a grammar like this:
+
+    expr1 : expr2 + expr1
+          | expr2
+    
+    expr2 : expr3 * expr2
+          | expr3
+    
+    expr3 : int
+          | ( expr1 )
+
+Note that `expr3` has an `expr1` inside parentheses. That "resets" the
+precedence. You'd do the same in places like function calls or
+anywhere else that precedence is clear.
+
 ## CHECKIN Due March 26
 
 TODO: John please expand this part
