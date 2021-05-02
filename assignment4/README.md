@@ -213,7 +213,7 @@ would produce:
     let t.8 = 300
     let t.9 = 200
     let t.10 = resize(t.7, t.8, t.9)
-    write image t.9 to "out.png"
+    write image t.10 to "out.png"
     let t.11 = get_time()
     let t.12 = sub_floats(t.11, t.1)
     print "time:"
